@@ -198,22 +198,34 @@
 
 
 //leap year condition 
-import java.util.*;
+// import java.util.*;
+// public class Array {
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         System.out.println("Enter the year :");
+//         int year = sc.nextInt();
+//         if (year%4==0 || year%100==0){
+//             System.out.println("This year is leap year");
+//         } 
+//         else if (year % 400 == 0) {
+//             System.out.println("This year is leap year");
+//         }
+//         else { 
+//             System.out.println("this year is not leap year");
+
+//         }
+//         sc.close();
+        
+//     }
+// }
+
 public class Array {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Enter the year :");
-        int year = sc.nextInt();
-        if (year%4==0 || year%100==0){
-            System.out.println("This year is leap year");
-        } 
-        else if (year % 400 == 0) {
-            System.out.println("This year is leap year");
+        int n = 5;
+        int i = 0;
+        while (i<n) {
+            System.out.println(i);
+            i++;
         }
-        else { 
-            System.out.println("this year is not leap year");
-
-        }
-        
     }
 }
