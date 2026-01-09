@@ -78,7 +78,5 @@ public class Sorting {
         // Arrays.sort(arr,Collections.reverseOrder());
         printArr(arr);
     }
-    
 }
-
 
