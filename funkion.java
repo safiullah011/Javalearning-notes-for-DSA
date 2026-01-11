@@ -54,3 +54,4 @@ public class funkion {
 /* Why not recursion?
 For huge number we cannot use int and float we have to use Biginteger  
 Iterative approach is better here to avoid stack overflow for large n.*/
+//Doing best 
