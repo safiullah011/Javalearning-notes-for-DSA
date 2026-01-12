@@ -30,28 +30,66 @@
 //     }
 // }
 
-import java.math.BigInteger;
+// import java.math.BigInteger;
 
-public class funkion {
+// public class funkion {
 
-    public static BigInteger factorial(int n) {
-        BigInteger f = BigInteger.ONE;
+//     public static BigInteger factorial(int n) {
+//         BigInteger f = BigInteger.ONE;
 
-        for (int i = 1; i <= n; i++) {
-            f = f.multiply(BigInteger.valueOf(i));
-        }
+//         for (int i = 1; i <= n; i++) {
+//             f = f.multiply(BigInteger.valueOf(i));
+//         }
 
-        return f;
-    }
+//         return f;
+//     }
 
-    public static void main(String[] args) {
-        int n = 685;
-        System.out.println("Factorial of " + n + " is:");
-        System.out.println(factorial(n));
-    }
-}
+//     public static void main(String[] args) {
+//         int n = 685;
+//         System.out.println("Factorial of " + n + " is:");
+//         System.out.println(factorial(n));
+//     }
+// }
 
 /* Why not recursion?
 For huge number we cannot use int and float we have to use Biginteger  
 Iterative approach is better here to avoid stack overflow for large n.*/
-//Doing best 
+
+// Converting binary to decimal
+// public class funkion {
+    // public static void bintodec(int binnum) {
+    //     int mynum = binnum;
+    //     int pow = 0;
+    //     int decnum = 0;
+    //     while(binnum > 0 ) {
+    //         int lastdigit = binnum % 10;
+    //         decnum = decnum + (lastdigit * (int)Math.pow(2,pow));
+    //         pow ++ ;
+    //         binnum = binnum/10;
+    //     }
+    //     System.out.println("decimal of : "+ mynum + " = " + decnum);
+
+    // }
+    //Converting decimal to binary
+public class funkion {
+
+    // Converting decimal to binary
+    public static void dectobin(int decnum) {
+        int mynum = decnum;   // store original value
+        int pow = 0;
+        int binnum = 0;
+
+        while (decnum > 0) {
+            int rem = decnum % 2;
+            binnum = binnum + (rem * (int) Math.pow(10, pow));
+            pow++;
+            decnum = decnum / 2;
+        }
+
+        System.out.println("Binary of " + mynum + " = " + binnum);
+    }
+
+    public static void main(String[] args) {
+        dectobin(5);
+    }
+}
