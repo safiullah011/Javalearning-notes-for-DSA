@@ -90,6 +90,6 @@ public class funkion {
     }
 
     public static void main(String[] args) {
-        dectobin(5);
+        dectobin(11);
     }
 }
