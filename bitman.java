@@ -18,7 +18,27 @@ public class bitman {
         int bitMask = ~(1<<i);
         return n&bitMask ;
     }
+    //clear ith bit 
+    public static int updateithbit(int n,int i,int newbit) {
+        if(newbit == 0) {
+            return clearbit(n,i);
+        } else {
+            return setbit(n,i);
+        }
+    }
+    //clear last ith bit
+    public static int clearithbit(int n , int i) {
+        int bitMask = (~0)<<i;
+        return n&bitMask;
+    }
+    //clear bit in range 
+    public static int clearIbits(int n,int i , int j) {
+        int a = ((~0)<<(j+1));
+        int b = (1<<i) - 1;
+        int bitMask = a | b;
+        return n & bitMask;
+    }
     public static void main(String[] args) {
-        System.out.println(clearbit(10,2));
+        System.out.println(clearIbits(10,2, 7));
     }
 }
