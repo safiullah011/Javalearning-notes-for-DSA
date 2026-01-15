@@ -38,7 +38,13 @@ public class bitman {
         int bitMask = a | b;
         return n & bitMask;
     }
+    //Finding the any number is power of 2 or not
+    public static boolean ispoweroftwo(int n) {
+        return (n&(n-1)) == 0;
+    }
     public static void main(String[] args) {
-        System.out.println(clearIbits(10,2, 7));
+        System.out.println(ispoweroftwo(8));
     }
 }
+
+
