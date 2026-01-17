@@ -48,12 +48,18 @@
 
 // }
 
+
+//Inheritence 
+
 public class Oops {
     public static void main(String[] args) {
-        Fish Shark = new Fish();
-        Shark.eat();
-        Shark.breath();
-        
+        // Fish Shark = new Fish();
+        // Shark.eat();
+        // Shark.breath();
+        dog dobby = new dog();
+        dobby.eat();
+        dobby.legs = 4;
+        System.out.println(dobby.legs);
     }
 }
 
@@ -66,11 +72,18 @@ class Animal{
         System.out.println("breathes");
     }
 }
+//derived\subclass
+// class Fish extends Animal {
+//     int fins;
 
-class Fish extends Animal {
-    int fins;
+//     void swim() {
+//         System.out.println("swims in water");
+//     }
+// }
 
-    void swim() {
-        System.out.println("swims in water");
-    }
+class mammmal extends Animal {
+    int legs;
+}
+class dog extends mammmal {
+    String breed;
 }
