@@ -124,40 +124,87 @@
 
 
 
+// public class Oops {
+//     public static void main(String[] args) {
+//         Queen q = new Queen();
+//         q.mooves();
+//     }
+// }
+
+// interface Herbivores {
+
+// }
+// interface Carnivore {
+
+// }
+// class Bear implements Herbivores , Carnivore {
+//                                                                      // hear we can make infinite no. super interfaces property
+// }
+
+// interface Chessplayer {
+//     void mooves(); //public,abstract , in chess player we cannot write its implementation bcoz we have to implement abstract
+
+// }
+// class Queen implements Chessplayer {
+//     public void mooves() {
+//         System.out.println("up,down , left , right , diagonal (in all)");
+//     }
+// }
+// class Rook implements Chessplayer {
+//     public void mooves() {
+//         System.out.println("up, down , left , right");
+//     }
+// }
+
+// class King implements Chessplayer {
+//     public void mooves() {
+//         System.out.println("up, down , left , right , diagonal");
+//     }
+// }
+
+
+// public class Oops {
+//     public static void main(String[] args) {
+//         Student s1 = new Student();
+//         s1.SchoolName = "Tubaday";
+
+//         Student s2 = new Student();
+//         System.out.println(s2.SchoolName);
+//         Student s3 = new Student() ;
+//         s3.SchoolName = "ABC";
+//     }
+// }
+
+// class Student {
+//     String name;
+//     int roll;
+//     static String SchoolName ;        // It never changes due to static 
+
+//     void setName ( String name) {
+//         this.name = name ;
+//     }
+//     String getName() {
+//         return this.name ;
+//     }
+// }
+
+
 public class Oops {
     public static void main(String[] args) {
-        Queen q = new Queen();
-        q.mooves();
+        Horse h = new Horse() ;
+        System.out.println(h.color);
     }
 }
-
-interface Herbivores {
-
-}
-interface Carnivore {
-
-}
-class Bear implements Herbivores , Carnivore {
-                                                                     // hear we can make infinite no. super interfaces property
-}
-
-interface Chessplayer {
-    void mooves(); //public,abstract , in chess player we cannot write its implementation bcoz we have to implement abstract
-
-}
-class Queen implements Chessplayer {
-    public void mooves() {
-        System.out.println("up,down , left , right , diagonal (in all)");
+class Animal {
+    String color;
+    Animal() {
+        System.out.println("Animal constructor is called");
     }
 }
-class Rook implements Chessplayer {
-    public void mooves() {
-        System.out.println("up, down , left , right");
-    }
-}
-
-class King implements Chessplayer {
-    public void mooves() {
-        System.out.println("up, down , left , right , diagonal");
+class Horse extends Animal {
+    Horse() {
+        super () ;
+        super.color = "Brown";
+        System.out.println("horse constructor called");
     }
 }
