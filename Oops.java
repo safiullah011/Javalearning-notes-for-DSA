@@ -51,39 +51,73 @@
 
 //Inheritence 
 
-public class Oops {
-    public static void main(String[] args) {
-        // Fish Shark = new Fish();
-        // Shark.eat();
-        // Shark.breath();
-        dog dobby = new dog();
-        dobby.eat();
-        dobby.legs = 4;
-        System.out.println(dobby.legs);
-    }
-}
+// public class Oops {
+//     public static void main(String[] args) {
+//         // Fish Shark = new Fish();
+//         // Shark.eat();
+//         // Shark.breath();
+//         // dog dobby = new dog();
+//         // dobby.eat();
+//         // dobby.legs = 4;
+//         // System.out.println(dobby.legs);
+//     }
+// }
 
-class Animal{
-    String color ;
-    void eat() {
-        System.out.println("eats");
-    }
-    void breath() {
-        System.out.println("breathes");
-    }
-}
-//derived\subclass
+// class Animal{
+//     String color ;
+//     void eat() {
+//         System.out.println("eats");
+//     }
+//     void breath() {
+//         System.out.println("breathes");
+//     }
+// }
+// //derived\subclass
+// //hirarchial inheritnece
 // class Fish extends Animal {
-//     int fins;
+//     // int fins;
 
 //     void swim() {
 //         System.out.println("swims in water");
 //     }
 // }
 
-class mammmal extends Animal {
-    int legs;
+// class mammmal extends Animal {
+//     // int legs;
+//     void walk() {
+//         System.out.println("walks");
+//     }
+// }
+
+// //Multi level inheritence 
+// // class dog extends mammmal {
+// //     String breed;
+// // }
+
+// class Bird extends Animal {
+//     void fly() {
+//         System.out.println("fly");
+//     }   
+// }
+
+//Function overloading
+public class Oops {
+    public static void main(String[] args) {
+        Calculator calc = new Calculator();
+        System.out.println(calc.sum(1,2));
+        System.out.println(calc.sum(1.8f , 2.2f));
+        System.out.println(calc.sum(2,3,5));
+        
+    }
 }
-class dog extends mammmal {
-    String breed;
+class Calculator {
+    int sum(int a , int b) {
+        return a + b;
+    }
+    float sum(float a , float b) {
+        return a + b ;
+    }
+    int sum( int a ,int b , int c) {
+        return a + b + c;
+    }
 }
