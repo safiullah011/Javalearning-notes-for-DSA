@@ -101,23 +101,63 @@
 // }
 
 //Function overloading
+// public class Oops {
+//     public static void main(String[] args) {
+//         Calculator calc = new Calculator();
+//         System.out.println(calc.sum(1,2));
+//         System.out.println(calc.sum(1.8f , 2.2f));
+//         System.out.println(calc.sum(2,3,5));
+        
+//     }
+// }
+// class Calculator {
+//     int sum(int a , int b) {
+//         return a + b;
+//     }
+//     float sum(float a , float b) {
+//         return a + b ;
+//     }
+//     int sum( int a ,int b , int c) {
+//         return a + b + c;
+//     }
+// }
+
+
+
 public class Oops {
     public static void main(String[] args) {
-        Calculator calc = new Calculator();
-        System.out.println(calc.sum(1,2));
-        System.out.println(calc.sum(1.8f , 2.2f));
-        System.out.println(calc.sum(2,3,5));
-        
+        Queen q = new Queen();
+        q.mooves();
     }
 }
-class Calculator {
-    int sum(int a , int b) {
-        return a + b;
+
+interface Herbivores {
+
+}
+interface Carnivore {
+
+}
+class Bear implements Herbivores , Carnivore {
+                                                                     // hear we can make infinite no. super interfaces property
+}
+
+interface Chessplayer {
+    void mooves(); //public,abstract , in chess player we cannot write its implementation bcoz we have to implement abstract
+
+}
+class Queen implements Chessplayer {
+    public void mooves() {
+        System.out.println("up,down , left , right , diagonal (in all)");
     }
-    float sum(float a , float b) {
-        return a + b ;
+}
+class Rook implements Chessplayer {
+    public void mooves() {
+        System.out.println("up, down , left , right");
     }
-    int sum( int a ,int b , int c) {
-        return a + b + c;
+}
+
+class King implements Chessplayer {
+    public void mooves() {
+        System.out.println("up, down , left , right , diagonal");
     }
 }
