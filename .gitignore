@@ -1,0 +1,23 @@
+Method Definition and Invocation: Java methods are blocks of code defined within classes to perform specific tasks.
+ A method's structure includes an access modifier (e.g., public, private), return type 
+(e.g., int, String, or void), method name, and parameters.  Methods are called using an object (for instance methods)
+or directly via the class name (for static methods). 
+Method Overloading and Overriding:
+Overloading allows multiple methods with the same name but different parameters (e.g., add(int a, int b) and add(double a, double b)). 
+Overriding enables a subclass to provide a specific implementation of a method already defined in its superclass, supporting runtime polymorphism. 
+Common Built-in Methods:
+//System.out.println(): Outputs text to the console.
+//String.length(), String.equals(), String.substring(): Used for string manipulation.
+//Arrays.sort(), Arrays.toString(): For array operations.
+//Math.random(), Math.sqrt(): Mathematical functions.
+//Thread.sleep(): Pauses execution for a specified time.
+//System.currentTimeMillis(): Returns the current time in milliseconds. 
+Java Collections Framework Methods:
+HashMap:
+put(K key, V value): Adds a key-value pair.
+get(Object key): Retrieves the value associated with a key.
+remove(Object key): Removes a key-value pair.
+containsKey(Object key): Checks if a key exists.
+keySet(): Returns all keys in the map.
+ArrayList:
+add(E element), get(int index), remove(int index), size(), isEmpty(). 
